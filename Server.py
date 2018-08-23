@@ -1,4 +1,5 @@
 #Reference From:- https://github.com/schedutron/CPAP/blob/master/Chap5/chat_serv.py
+#Reference From:- https://github.com/schedutron/CPAP/blob/master/Chap5/chat_serv.py
 #!/usr/bin/env python3
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
@@ -41,8 +42,9 @@ addresses = {}
 
 HOST = ''
 print("Enter Port No on which you want to host the server,or just press enter to use the defult port 4444!")
-PORT = '4444'
 PORT = input()
+if(PORT == ""):
+	PORT = '4444'
 PORT = int(PORT)
 while(PORT > 65535):
     print("Invalid!Please Enter a value strictly less than 65536!")
