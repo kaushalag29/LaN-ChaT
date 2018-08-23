@@ -1,8 +1,9 @@
-#Reference From:- https://github.com/schedutron/CPAP/blob/master/Chap5/chat_serv.py
-#Reference From:- https://github.com/schedutron/CPAP/blob/master/Chap5/chat_serv.py
 #!/usr/bin/env python3
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
+
+#Reference From:- https://github.com/schedutron/CPAP/blob/master/Chap5/chat_serv.py
+#Reference From:- https://github.com/schedutron/CPAP/blob/master/Chap5/chat_serv.py
 
 def accept_incoming_connections():
     while True:
